@@ -1,0 +1,28 @@
+extends layout
+
+block append head
+  link(rel='stylesheet', href='/stylesheets/chat.css')
+
+  script(src="/socket.io/socket.io.js")
+  script(src="/javascripts/jquery/jquery-1.7.min.js")
+  script(src="/javascripts/chat.js")
+
+block content
+  h1 Chat
+
+  label(for="userName") User name: (Hit Enter) 
+  input#userName(type="text", size="30")
+  span#feedback
+
+  p
+  div#msgWindow.shadow
+
+  p
+  div
+    br
+    table
+      tr
+        td
+          select#users(style="width: 100px")
+        td
+          input#msg(type="text", style="width: 600px", disabled="true")

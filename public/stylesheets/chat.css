@@ -1,0 +1,29 @@
+.allMsg {
+  
+}
+
+.privMsg {
+  font-style:italic;
+}
+
+.adminMsg {
+  font-face: "verdana, helvetica";
+  font-size: 8;
+}
+ 
+#msgWindow {
+  white-space: pre;
+  overflow-y: auto;
+  overflow-x: none;
+  width: 700px;
+  height: 550px;
+}
+
+.shadow {
+  box-shadow: 2px 2px 4px 1px #000000;
+  padding-top: 10px;
+  padding-right: 1px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+}
+
